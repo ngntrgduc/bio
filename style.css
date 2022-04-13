@@ -1,5 +1,9 @@
+:root {
+    --bg: #e6f5ff;
+}
+
 html {
-    background-color: #e6f5ff;
+    background-color: var(--bg);
     font-family: 'Be Vietnam Pro', sans-serif;
     transition-duration: 0.6s;
 }
@@ -13,7 +17,7 @@ html {
 }
 
 .card {
-    background-color: #e6f5ff;
+    background: var(--bg);
     position: absolute;
     left: 50%;
     top: 50%;
@@ -26,7 +30,7 @@ html {
 }
 
 .card:hover {
-    background-color: #e6f5ff;
+    background-color: var(--bg);
     box-shadow: 5px 5px 6px #7e7f86, -5px -5px 6px #ffffff;
     transition-duration: 0.6s;
 }
@@ -40,22 +44,16 @@ html {
 
 .profile_img {
     border-radius: 50%;
-    transition-duration: 0.6s;
-}
-
-.profile_img:hover {
-    box-shadow: 5px 5px 6px #7e7f86, -5px -5px 6px #ffffff;
-    transition-duration: 0.6s;
 }
 
 .name {
-    background-color: #e6f5ff;
+    background-color: var(--bg);
     font-size: 28px;
     transition-duration: 0.6s;
 }
 
 .bio {
-    background-color: #e6f5ff;
+    background-color: var(--bg);
     font-size: 24px;
     transition-duration: 0.6s;
 }
@@ -63,6 +61,9 @@ html {
 .social {
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
+    /* padding-bottom: 1px; */
+    padding: 0cm;
 }
 
 .social_icon {
@@ -73,7 +74,6 @@ html {
 }
 
 .social_icon:hover {
-
     border-radius: 5px;
     transition-duration: 0.6s;
     box-shadow: 5px 5px 6px #7e7f86, -5px -5px 6px #ffffff;
